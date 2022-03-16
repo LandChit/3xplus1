@@ -20,7 +20,7 @@ while True:
             
         plot(x,y) # initial
 
-        while not done: #if not True run    
+        while x != 1: #if not True run    
             if (x%2) == 0: # if even
                 x = x/2
             else: # if odd
@@ -29,8 +29,6 @@ while True:
             y += 1
 
             plot(x,y)
-            if x == 1:
-                done = True
 
 
         plt.xlabel('timeline')
